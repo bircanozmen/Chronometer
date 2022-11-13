@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:hint="00:00.00"
+        android:textColor="@color/purple_500"
+        android:textColorHint="@color/purple_500"
+        android:textSize="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/textview"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="30dp"
+            android:onClick="start"
+            android:text="START"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/textview"
+            android:layout_marginTop="50dp"
+            android:layout_toEndOf="@id/button1"
+            android:onClick="stop"
+            android:layout_marginLeft="20dp"
+            android:text="STOP"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/button1" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/textview"
+            android:layout_marginTop="50dp"
+            android:layout_toEndOf="@id/button2"
+            android:layout_marginLeft="20dp"
+            android:onClick="reset"
+            android:text="RESET"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/button2" />
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/chronometer"
+        android:layout_below="@id/button1"/>
+
+
+
+</RelativeLayout>
